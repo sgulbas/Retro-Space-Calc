@@ -12,6 +12,8 @@
 		0C56F6791CC50730006FF7D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C56F6771CC50730006FF7D7 /* Main.storyboard */; };
 		0C56F67B1CC50730006FF7D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C56F67A1CC50730006FF7D7 /* Assets.xcassets */; };
 		0C56F67E1CC50730006FF7D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C56F67C1CC50730006FF7D7 /* LaunchScreen.storyboard */; };
+		0CB9B5A71CC658B900E5CE98 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CB9B5A61CC658B900E5CE98 /* Minecraft.ttf */; };
+		0CB9B5A91CC65F1800E5CE98 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CB9B5A81CC65F1800E5CE98 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0C56F67A1CC50730006FF7D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C56F67D1CC50730006FF7D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C56F67F1CC50730006FF7D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB9B5A61CC658B900E5CE98 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		0CB9B5A81CC65F1800E5CE98 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		0C56F6721CC50730006FF7D7 /* Retro-Space-Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				0CB9B5A81CC65F1800E5CE98 /* btn.wav */,
+				0CB9B5A61CC658B900E5CE98 /* Minecraft.ttf */,
 				0C56F6731CC50730006FF7D7 /* AppDelegate.swift */,
 				0C56F6751CC50730006FF7D7 /* ViewController.swift */,
 				0C56F6771CC50730006FF7D7 /* Main.storyboard */,
@@ -122,8 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB9B5A91CC65F1800E5CE98 /* btn.wav in Resources */,
 				0C56F67E1CC50730006FF7D7 /* LaunchScreen.storyboard in Resources */,
 				0C56F67B1CC50730006FF7D7 /* Assets.xcassets in Resources */,
+				0CB9B5A71CC658B900E5CE98 /* Minecraft.ttf in Resources */,
 				0C56F6791CC50730006FF7D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +257,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Retro-Space-Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gulbasdevelopment.Retro-Space-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +271,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Retro-Space-Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gulbasdevelopment.Retro-Space-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +300,7 @@
 				0C56F6841CC50730006FF7D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
